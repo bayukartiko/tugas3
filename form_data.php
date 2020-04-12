@@ -50,13 +50,19 @@
             </tr>
         </thead>
         <tbody>
-            <?php foreach($result as $data) { ?>
+            <?php 
+
+                $no = 0;
+
+                foreach($result as $data) { 
+
+                $no++;
+
+            ?>
             <tr>
                 <th scope="row">
                     <?php 
-                        for($i = 0; $i < 1; $i++){
-                            echo $nomor = $i + 1;
-                        }
+                        echo $no;
                     ?>
                 </th>
                 <td><?php echo $data['kode_barang'] ?></td>
