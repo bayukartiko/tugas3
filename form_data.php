@@ -8,6 +8,9 @@
         if($info=='hapus'){
             $message = "data berhasil dihapus";
             echo "<script type='text/javascript'>alert('$message');</script>";
+        }elseif($info=='edit'){
+            $message = "data berhasil diedit";
+            echo "<script type='text/javascript'>alert('$message');</script>";
         }
     }
 ?>
@@ -88,7 +91,7 @@
 
                 <td>
                     <button type="button" class="btn btn-outline-success">
-                        <a href="#">Edit</a>
+                        <a href="form_edit.php?key=<?php echo $data['kode_barang']; ?>">Edit</a>
                     </button>
 
                     <button type="button" class="btn btn-outline-danger">
