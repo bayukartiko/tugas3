@@ -15,7 +15,7 @@
             width: 500px;
         }
         .form-group{
-            margin-top: 150px;
+            margin-top: 100px;
             margin-left: -50%;
             width: 200%;
             /* border: 1px solid black;  */
@@ -29,6 +29,11 @@
         .custom-control{
             margin-left: 6.5px;
             margin-top: 6.5px;
+        }
+        .pilihradio{
+            border: 1px solid paleturquoise;
+            width: 80.5%;
+            text-align: left;
         }
             /* .satuan{
                 position: absolute;
@@ -50,7 +55,7 @@
                     <div class="input-group-prepend">
                         <div class="input-group-text">Kode Barang</div>
                     </div>
-                        <input type="text" class="form-control" placeholder="Kode Barang Otomatis" disabled>
+                        <input type="text" class="form-control" placeholder="MD- Kode Barang Otomatis" disabled>
                 </div>
             </div>
 
@@ -98,9 +103,10 @@
 
             <div class="col-sm-3 my-1">
                 <div class="input-group mb-2">
-                    <!-- <div class="input-group-prepend"> -->
+                    <div class="input-group-prepend">
                         <div class="input-group-text satuan">Satuan</div>
-                    <!-- </div> -->
+                    </div>
+                    <div class="input-group-prepend pilihradio">
                     <div class="custom-control custom-radio custom-control-inline">
                         <input type="radio" id="customRadioInline1" name="satuan" value="box" class="custom-control-input" required>
                         <label class="custom-control-label" for="customRadioInline1">Box</label>
@@ -116,6 +122,7 @@
                     <div class="custom-control custom-radio custom-control-inline">
                         <input type="radio" id="customRadioInline4" name="satuan" value="lainnya" class="custom-control-input" required>
                         <label class="custom-control-label" for="customRadioInline4">lainnya</label>
+                    </div>
                     </div>
                 </div>
             </div>
@@ -141,6 +148,10 @@
             <button type="submit" class="btn btn-primary">Simpan</button>
 
         </div>
+    </form>
+
+    <form action="form_data.php">
+        <button type="submit" class="btn btn-info">Lihat Data</button>
     </form>
 </body>
 </center>

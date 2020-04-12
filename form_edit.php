@@ -60,7 +60,7 @@
                     <div class="input-group-prepend">
                         <div class="input-group-text">Kode Barang</div>
                     </div>
-                        <input type="text" name="kode" class="form-control" value="<?php echo $data['kode_barang'] ?>" disabled>
+                        <input type="text" name="kode" class="form-control" value="<?php echo "MD-".$data['kode_barang'] ?>" disabled>
                         <input type="hidden" name="kodeb" class="form-control" value="<?php echo $data['kode_barang'] ?>">
                 </div>
             </div>
@@ -152,6 +152,9 @@
             <button type="submit" class="btn btn-primary">Edit</button>
 
         </div>
+    </form>
+    <form action="form_data.php">
+        <button type="submit" class="btn btn-info">Batal</button>
     </form>
 
     <?php } ?>

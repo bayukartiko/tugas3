@@ -26,6 +26,7 @@
     <style>
         table{
             text-align: center;
+            vertical-align: center;
         }
         .bgmerah{
             background: red;
@@ -65,7 +66,7 @@
                         echo $no;
                     ?>
                 </th>
-                <td><?php echo $data['kode_barang'] ?></td>
+                <td><?php echo "MD-".$data['kode_barang'] ?></td>
                 <td><?php echo $data['tanggal'] ?></td>
                 <td><?php echo $data['nama_barang'] ?></td>
                 <td><?php echo "Rp.".$data['harga_barang'] ?></td>
